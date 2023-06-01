@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--v glavo sem vključil UTF-8 za šumnike. naslov, možnost uporabe na mobilnih napravah(da ni problemov s povečavo)
+        ter povezavo do stil.css ter stile same (nekaj styla sem naredil v html-ju samem namesto v css-u)-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Človek proti mašini (računalniku)</title>
+    <link rel="stylesheet" type="text/css" href="stil.css">
+    <style>
+        .text-container {
+          text-align: left;
+          padding-left: 20px; /* odmik od leve strani za 20 pikslov */
+        }
+
+      </style>
+</head> 
+<body><!--začetek telesa spletne strani-->
+    <header> 
+        <h1>Človek proti mašini (računalniku)</h1> <!--glavni naslov spletne strani-->
+    </header>
+
+    <nav> <!--meni s katerim se lahko sprehajamo po spletni strani-->
+        <ul> <!--unordered list, vsaka vrstica predstavlja element v tem seznamu-->
+          <li><a href="zgodovina.html" target=_blank>Zgodovina</a></li>
+          <li><a href="sah.html" target=_blank>Kraljevska igra šah</a></li>
+          <li><a href="jeopardy.html" target=_blank>Kviz Jeopardy</a></li>
+          <li><a href="go.html" target=_blank>Igra GO</a></li>
+          <li><a href="UI.html" target=_blank>Umetna inteligenca</a></li>
+          <li><a href="viri.html" target=_blank>Viri in literatura</a></li>
+        </ul>
+    </nav>
+
+    <div class="text-container"> <!--div z razredom "text-container", vse stvari v temu divu dobijo lastnosti zapisane v tem razredu-->
+        <h2>Pozdravljeni na moji spletni strani!</h2>
+        <p>Če se boste sprehodili čez to spletno stran boste spoznali nekaj o zgodovini razvoja računalnikov, kako so vedno znova postajali močnejši, <!--p oznacuje tekst-->
+            izvedeli boste več o znanih dvobojih med ljudmi in jeklenimi stroji (npr. 1997 Deep Blue - Kasparov,  2011 Watson, Jeopardy,  2016 Alpha Go - Lee Sedol.).
+            Prav tako, pa se boste morda naučili kaj novega o trenutno zelo popularni umetni inteligenci. Želim vam prijetno branje! 
+        </p>
+    </div>
+
+    <div>
+        <img src="/images/pozdrav.webp" height="300" class="text-container"> <!--to je povezava do slike, z lastnostjo podanega razreda-->
+        <a href="index.html" target=_blank> <!--povezava do katere pridemo, če kliknemo na logotip-->
+            <img src="/images/logotip.svg" height="300" title="klikni za povratek na domačo stran" >
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; Domen Tisaj CC BY-NC-SA </p> <!--noga spletne strani-->
+    </footer>
+</body>
+</html>
